@@ -319,7 +319,7 @@ pub struct PubSub<'a> {
 }
 
 /// Represents a pubsub message.
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Msg {
     payload: Value,
     channel: Value,
